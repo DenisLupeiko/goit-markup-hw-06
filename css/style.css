@@ -778,14 +778,30 @@ transform: translateY(0%);
     color:var(--accent-text-color)
 }
 
+.maiking-input {
+    width: 358px;
+    height: 50px;
+}
+
 .mailing-button {
-    display: flex;
-    align-items: center;
     width: 200px;
     height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color:var(--accent-text-color);
+}
+
+.svg-mailing {
+    margin-left: 10px;
+   
 }
 
 /* Backdrop*/
@@ -809,7 +825,13 @@ transform: translateY(0%);
     pointer-events: none;
 }
 
+/* Modal window*/
+
 .modal {
+    padding-top: 40px;
+    padding-right: 39px;
+    padding-bottom: 40px;
+    padding-left: 41px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -839,4 +861,64 @@ transform: translateY(0%);
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
     padding: 0;
+}
+
+/*Modal form*/
+
+.modal-form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 30px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-field {
+    margin-bottom: 10px;
+}
+
+.modal-input-title {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color:var(--primary-text-color);
+    margin-bottom: 4px;
+}
+
+.modal-form-input-wrapper {
+    display: block;
+    position: relative;
+}
+
+.modal-form-input {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border 250ms var(--timing-function)
+}
+
+.modal-form-input:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+
+.modal-input-svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    fill: var(--secondary-text-color);
+}
+
+.modal-form-input:focus + .modal-input-svg {
+    fill: var(--accent-color);
 }
